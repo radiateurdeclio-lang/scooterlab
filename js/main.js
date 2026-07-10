@@ -1,4 +1,4 @@
-const SITE_BASE = "https://radiateurdeclio-lang.github.io/scooterlab-site";
+const SITE_BASE = "https://radiateurdeclio-lang.github.io/scooterlab";
 
 const PLATFORMS_FALLBACK = [
   {
@@ -6,25 +6,25 @@ const PLATFORMS_FALLBACK = [
     name: "Windows",
     icon: "assets/platforms/windows.svg",
     description: "Windows 10/11 (64-bit)",
-    file: "ScooterLab_0.2.2_x64-setup.exe",
-    size: "~15 Mo",
-    localUrl: "downloads/ScooterLab_0.2.2_x64-setup.exe",
+    file: "ScooterLab_0.2.3_x64-setup.exe",
+    size: "~4 Mo",
+    localUrl: "downloads/ScooterLab_0.2.3_x64-setup.exe",
   },
   {
     id: "macos",
     name: "macOS",
     icon: "assets/platforms/macos.svg",
     description: "Apple Silicon & Intel",
-    file: "ScooterLab_0.2.2_universal.dmg",
-    size: "~20 Mo",
+    file: "ScooterLab_0.2.3_aarch64.dmg",
+    size: "~6 Mo",
   },
   {
     id: "linux",
     name: "Linux",
     icon: "assets/platforms/linux.svg",
     description: "AppImage (x64)",
-    file: "ScooterLab_0.2.2_amd64.AppImage",
-    size: "~18 Mo",
+    file: "ScooterLab_0.2.3_amd64.AppImage",
+    size: "~77 Mo",
   },
   {
     id: "android",
@@ -51,7 +51,7 @@ async function loadManifest() {
     if (!res.ok) throw new Error("manifest not found");
     return await res.json();
   } catch {
-    return { version: "0.2.2", platforms: PLATFORMS_FALLBACK, releasesUrl: SITE_BASE };
+    return { version: "0.2.3", platforms: PLATFORMS_FALLBACK, releasesUrl: SITE_BASE };
   }
 }
 
