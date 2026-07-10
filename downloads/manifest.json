@@ -1,18 +1,18 @@
 {
   "version": "0.2.2",
   "releaseDate": "2026-07-10",
-  "repository": "https://github.com/radiateurdeclio-lang/scooterlab",
-  "releasesUrl": "https://github.com/radiateurdeclio-lang/scooterlab/releases/latest",
+  "releasesUrl": "https://radiateurdeclio-lang.github.io/scooterlab-site/",
   "platforms": [
     {
       "id": "windows",
       "name": "Windows",
       "icon": "assets/platforms/windows.svg",
       "description": "Windows 10/11 (64-bit) — BLE réel + débridage E45E",
-      "file": "ScooterLab_0.2.0_x64-setup.exe",
-      "size": "~15 Mo",
-      "assetName": "ScooterLab_0.2.0_x64-setup.exe",
-      "localUrl": "downloads/ScooterLab_0.2.0_x64-setup.exe",
+      "file": "ScooterLab_0.2.2_x64-setup.exe",
+      "size": "~4 Mo",
+      "localUrl": "downloads/ScooterLab_0.2.2_x64-setup.exe",
+      "url": "https://radiateurdeclio-lang.github.io/scooterlab-site/downloads/ScooterLab_0.2.2_x64-setup.exe",
+      "available": true,
       "note": "Requis pour Bluetooth et débridage"
     },
     {
@@ -20,37 +20,40 @@
       "name": "macOS",
       "icon": "assets/platforms/macos.svg",
       "description": "Apple Silicon & Intel",
-      "file": "ScooterLab_0.2.0_aarch64.dmg",
-      "size": "~20 Mo",
-      "assetName": "ScooterLab_0.2.0_aarch64.dmg"
+      "file": "ScooterLab_0.2.2_aarch64.dmg",
+      "size": "~6 Mo",
+      "url": "https://radiateurdeclio-lang.github.io/scooterlab-site/downloads/ScooterLab_0.2.2_aarch64.dmg",
+      "available": true
     },
     {
       "id": "linux",
       "name": "Linux",
       "icon": "assets/platforms/linux.svg",
       "description": "AppImage (x64)",
-      "file": "ScooterLab_0.2.0_amd64.AppImage",
-      "size": "~18 Mo",
-      "assetName": "ScooterLab_0.2.0_amd64.AppImage"
+      "file": "ScooterLab_0.2.2_amd64.AppImage",
+      "size": "~77 Mo",
+      "url": "https://radiateurdeclio-lang.github.io/scooterlab-site/downloads/ScooterLab_0.2.2_amd64.AppImage",
+      "available": true
     },
     {
       "id": "android",
       "name": "Android",
       "icon": "assets/platforms/android.svg",
       "description": "Android 8+ (APK)",
-      "file": "ScooterLab_0.2.0_android.apk",
+      "file": "ScooterLab_0.2.2_android.apk",
       "size": "~25 Mo",
-      "assetName": "ScooterLab_0.2.0_android.apk"
+      "available": false,
+      "note": "Build mobile à venir"
     },
     {
       "id": "ios",
       "name": "iPhone / iPad",
       "icon": "assets/platforms/ios.svg",
       "description": "iOS 14+",
-      "file": "ScooterLab_0.2.0_ios.ipa",
+      "file": "ScooterLab_0.2.2_ios.ipa",
       "size": "~22 Mo",
-      "assetName": "ScooterLab_0.2.0_ios.ipa",
-      "note": "AltStore / Sideloadly"
+      "available": false,
+      "note": "AltStore / Sideloadly — build à venir"
     }
   ]
 }
