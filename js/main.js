@@ -6,16 +6,16 @@ const PLATFORMS_FALLBACK = [
     name: "Windows",
     icon: "assets/platforms/windows.svg",
     description: "Windows 10/11 (64-bit)",
-    file: "ScooterLab_0.2.3_x64-setup.exe",
+    file: "ScooterLab_0.2.4_x64-setup.exe",
     size: "~4 Mo",
-    localUrl: "downloads/ScooterLab_0.2.3_x64-setup.exe",
+    localUrl: "downloads/ScooterLab_0.2.4_x64-setup.exe",
   },
   {
     id: "macos",
     name: "macOS",
     icon: "assets/platforms/macos.svg",
     description: "Apple Silicon & Intel",
-    file: "ScooterLab_0.2.3_aarch64.dmg",
+    file: "ScooterLab_0.2.4_aarch64.dmg",
     size: "~6 Mo",
   },
   {
@@ -23,7 +23,7 @@ const PLATFORMS_FALLBACK = [
     name: "Linux",
     icon: "assets/platforms/linux.svg",
     description: "AppImage (x64)",
-    file: "ScooterLab_0.2.3_amd64.AppImage",
+    file: "ScooterLab_0.2.4_amd64.AppImage",
     size: "~77 Mo",
   },
   {
@@ -51,7 +51,7 @@ async function loadManifest() {
     if (!res.ok) throw new Error("manifest not found");
     return await res.json();
   } catch {
-    return { version: "0.2.3", platforms: PLATFORMS_FALLBACK, releasesUrl: SITE_BASE };
+    return { version: "0.2.4", platforms: PLATFORMS_FALLBACK, releasesUrl: SITE_BASE };
   }
 }
 

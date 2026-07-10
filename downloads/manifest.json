@@ -1,25 +1,28 @@
 {
-  "version": "0.2.3",
-  "releasesUrl": "https://radiateurdeclio-lang.github.io/scooterlab",
+  "version": "0.2.4",
+  "releaseDate": "2026-07-10",
+  "releasesUrl": "https://radiateurdeclio-lang.github.io/scooterlab/",
   "platforms": [
     {
       "id": "windows",
       "name": "Windows",
       "icon": "assets/platforms/windows.svg",
-      "description": "Windows 10/11 (64-bit)",
-      "file": "ScooterLab_0.2.3_x64-setup.exe",
-      "size": "~15 Mo",
-      "url": "https://radiateurdeclio-lang.github.io/scooterlab/downloads/ScooterLab_0.2.3_x64-setup.exe",
-      "available": true
+      "description": "Windows 10/11 (64-bit) — BLE + débridage E45E",
+      "file": "ScooterLab_0.2.4_x64-setup.exe",
+      "size": "~4 Mo",
+      "localUrl": "downloads/ScooterLab_0.2.4_x64-setup.exe",
+      "url": "https://radiateurdeclio-lang.github.io/scooterlab/downloads/ScooterLab_0.2.4_x64-setup.exe",
+      "available": true,
+      "note": "Requis pour Bluetooth et débridage"
     },
     {
       "id": "macos",
       "name": "macOS",
       "icon": "assets/platforms/macos.svg",
       "description": "Apple Silicon & Intel",
-      "file": "ScooterLab_0.2.3_aarch64.dmg",
-      "size": "~20 Mo",
-      "url": "https://radiateurdeclio-lang.github.io/scooterlab/downloads/ScooterLab_0.2.3_aarch64.dmg",
+      "file": "ScooterLab_0.2.4_aarch64.dmg",
+      "size": "~6 Mo",
+      "url": "https://radiateurdeclio-lang.github.io/scooterlab/downloads/ScooterLab_0.2.4_aarch64.dmg",
       "available": true
     },
     {
@@ -27,9 +30,9 @@
       "name": "Linux",
       "icon": "assets/platforms/linux.svg",
       "description": "AppImage (x64)",
-      "file": "ScooterLab_0.2.3_amd64.AppImage",
-      "size": "~18 Mo",
-      "url": "https://radiateurdeclio-lang.github.io/scooterlab/downloads/ScooterLab_0.2.3_amd64.AppImage",
+      "file": "ScooterLab_0.2.4_amd64.AppImage",
+      "size": "~77 Mo",
+      "url": "https://radiateurdeclio-lang.github.io/scooterlab/downloads/ScooterLab_0.2.4_amd64.AppImage",
       "available": true
     }
   ]
