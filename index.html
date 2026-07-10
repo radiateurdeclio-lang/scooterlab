@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ScooterLab — Logiciel de gestion de trottinettes électriques (BLE, débridage, diagnostics). Téléchargez pour Windows, Mac et Linux." />
+  <title>ScooterLab — Téléchargements</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <img src="assets/icon.svg" alt="" width="40" height="40" />
+        <span>ScooterLab</span>
+      </a>
+      <nav>
+        <a href="#downloads">Télécharger</a>
+        <a href="#contact">Contact</a>
+        <a href="#source">Code source</a>
+        <a href="#disclaimer">Avertissement</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">ScooterLab · v0.2.2</div>
+        <h1>Le logiciel ultime pour gérer votre trottinette</h1>
+        <p class="hero-desc">
+          Communication BLE et Série réelle — diagnostics, batterie, débridage ESC, récupération brick.
+        </p>
+        <div class="hero-actions">
+          <a href="#downloads" class="btn btn-primary">Télécharger l'app desktop</a>
+        </div>
+        <p class="build-note" style="margin-top:1rem;color:var(--warning)">
+          ⚠️ La version web ne peut pas accéder au Bluetooth. Téléchargez l'application pour utiliser votre trottinette.
+        </p>
+      </div>
+    </section>
+
+    <section id="downloads" class="section">
+      <div class="container">
+        <h2>Télécharger ScooterLab</h2>
+        <p class="section-desc">Choisissez votre plateforme. Version actuelle : <strong id="version">0.2.2</strong></p>
+
+        <div class="platform-grid" id="platform-grid">
+          <!-- Rempli par JS depuis downloads.json -->
+        </div>
+
+        <p class="build-note">
+          Les builds sont hébergés sur le site public. Téléchargez la dernière version ci-dessus.
+        </p>
+      </div>
+    </section>
+
+    <section id="source" class="section section-alt">
+      <div class="container">
+        <h2>◇ Code source</h2>
+        <p class="section-desc">
+          Le dépôt ScooterLab est <strong>privé</strong>. Pour accéder au code source, envoyez une demande via le formulaire ci-dessous
+          (catégorie « Demande code source »). Précisez votre usage et votre modèle de trottinette.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-wrap">
+        <h2>◎ Messagerie / Contact</h2>
+        <p class="section-desc">
+          Support, demande d'accès au code, signalement de bug — envoyez un message directement.
+        </p>
+        <form id="contact-form" class="contact-form">
+          <div class="contact-row">
+            <label>
+              Nom *
+              <input type="text" name="name" required maxlength="80" placeholder="Votre pseudo" />
+            </label>
+            <label>
+              Email *
+              <input type="email" name="email" required maxlength="120" placeholder="vous@email.com" />
+            </label>
+          </div>
+          <label>
+            Catégorie
+            <select name="category">
+              <option value="source_code">Demande code source</option>
+              <option value="support">Support / bug app</option>
+              <option value="unlock">Débridage / brick</option>
+              <option value="other">Autre</option>
+            </select>
+          </label>
+          <label>
+            Sujet
+            <input type="text" name="subject" maxlength="120" placeholder="Ex: Accès code E45E" />
+          </label>
+          <label>
+            Message *
+            <textarea name="message" required rows="6" maxlength="4000" placeholder="Décrivez votre demande..."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          <p id="contact-status" class="contact-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="web" class="section section-alt">
+      <div class="container">
+        <h2>Version Web (aperçu UI uniquement)</h2>
+        <p class="section-desc">
+          L'interface est accessible en ligne mais <strong>sans accès Bluetooth</strong>.
+          Pour scanner, connecter et débrider votre trottinette, installez l'application desktop ou mobile.
+        </p>
+        <div class="web-card">
+          <div class="web-card-icon"><img src="assets/platforms/windows.svg" alt="" class="platform-logo" width="48" height="48" /></div>
+          <div>
+            <h3>ScooterLab Web</h3>
+            <p>Fonctionne sur Chrome, Firefox, Safari et Edge. L'avertissement de sécurité s'affiche avant l'accès.</p>
+          </div>
+          <a href="app/" class="btn btn-primary">Ouvrir l'application</a>
+        </div>
+        <div class="compat-row">
+          <span class="compat-tag">Windows</span>
+          <span class="compat-tag">macOS</span>
+          <span class="compat-tag">Linux</span>
+          <span class="compat-tag">Android</span>
+          <span class="compat-tag">iPhone / iPad</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="disclaimer" class="section disclaimer-section">
+      <div class="container">
+        <h2>◇ Avertissement important</h2>
+        <div class="disclaimer-box">
+          <p><strong>ScooterLab peut endommager définitivement votre trottinette (brick).</strong></p>
+          <p>
+            La modification du firmware, du contrôleur ou de la batterie comporte des risques sérieux.
+            L'application et ses développeurs <strong>déclinent toute responsabilité</strong> en cas de dommages,
+            perte de garantie ou blessures.
+          </p>
+          <p>Vous utilisez ce logiciel entièrement à vos propres risques. Sauvegardez toujours votre firmware avant toute modification.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container features">
+        <h2>Fonctionnalités</h2>
+        <div class="feature-grid">
+          <div class="feature"><span class="feature-icon">◈</span><h3>Dashboard live</h3><p>Vitesse, batterie, température en temps réel</p></div>
+          <div class="feature"><span class="feature-icon">◎</span><h3>Batterie</h3><p>Cellules, santé, export CSV</p></div>
+          <div class="feature"><span class="feature-icon">◇</span><h3>Diagnostics</h3><p>Codes erreur expliqués, rapports PDF</p></div>
+          <div class="feature"><span class="feature-icon">◆</span><h3>Firmware</h3><p>Sauvegarde, vérification, protection flash</p></div>
+          <div class="feature"><span class="feature-icon">○</span><h3>BLE / USB / Série</h3><p>Détection automatique</p></div>
+          <div class="feature"><span class="feature-icon">◎</span><h3>Fonctions cachées</h3><p>Zero start, cruise, mode sport</p></div>
+          <div class="feature"><span class="feature-icon">▣</span><h3>Plugins</h3><p>Ninebot, Xiaomi et extensible</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>ScooterLab · radiateurdeclio-lang · <a href="#contact">Contact</a></p>
+      <p class="footer-small">Code source sur demande uniquement. Utilisation à vos risques.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
